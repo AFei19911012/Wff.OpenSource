@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>disable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+	<PropertyGroup>
+		<BaseOutputPath>..\bin</BaseOutputPath>
+		 <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		 <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+		 <OutputPath>$(BaseOutputPath)</OutputPath>
+	</PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="SkiaSharp">
+      <HintPath>..\..\Dlls\SkiaSharp\SkiaSharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

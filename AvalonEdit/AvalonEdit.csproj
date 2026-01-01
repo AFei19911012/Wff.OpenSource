@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>disable</Nullable>
+    <UseWPF>true</UseWPF>
+	  <UseWindowsForms>true</UseWindowsForms>
+	  <DefineConstants>TRACE</DefineConstants>
+	  <SignAssembly>true</SignAssembly>
+	  <NoWarn>CS0649;SYSLIB0050</NoWarn>
+  </PropertyGroup>
+
+	<PropertyGroup>
+		<BaseOutputPath>..\bin</BaseOutputPath>
+		 <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		 <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+		 <OutputPath>$(BaseOutputPath)</OutputPath>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Remove="Search\next.png" />
+		<None Remove="Search\prev.png" />
+		<None Remove="themes\RightArrow.cur" />
+		<Resource Include="Search\next.png" />
+		<Resource Include="Search\prev.png" />
+		<Resource Include="themes\RightArrow.cur" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Remove="Highlighting\Resources\*" />
+		<EmbeddedResource Include="Highlighting\Resources\*" />
+		<EmbeddedResource Remove="Highlighting\Resources\Resources.cs" />
+		<Resource Include="Highlighting\Resources\Resources.cs" />
+	</ItemGroup>
+
+</Project>

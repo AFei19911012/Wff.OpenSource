@@ -1,0 +1,21 @@
+<Solution>
+  <Folder Name="/OpenSource/">
+    <Project Path="AvalonDock.Themes.VS2013/AvalonDock.Themes.VS2013.csproj" />
+    <Project Path="AvalonDock/AvalonDock.csproj" />
+    <Project Path="AvalonEdit/AvalonEdit.csproj" />
+    <Project Path="Bogus/Bogus.csproj" />
+    <Project Path="CsvHelper/CsvHelper.csproj" />
+    <Project Path="Dommel/Dommel.csproj" />
+    <Project Path="GongSolutions.WPF.DragDrop/GongSolutions.WPF.DragDrop.csproj" />
+    <Project Path="HelixToolkit/HelixToolkit.csproj" />
+    <Project Path="LibSvmDotNet/LibSvmDotNet.csproj" />
+    <Project Path="MiniExcelLibs/MiniExcelLibs.csproj" />
+    <Project Path="NLua/NLua.csproj" />
+    <Project Path="OxyPlot.Wpf.Shared/OxyPlot.Wpf.Shared.csproj" />
+    <Project Path="OxyPlot.Wpf/OxyPlot.Wpf.csproj" />
+    <Project Path="OxyPlot/OxyPlot.csproj" />
+    <Project Path="Serilog/Serilog.csproj" />
+    <Project Path="SkiaSharp.Views.WPF/SkiaSharp.Views.WPF.csproj" />
+  </Folder>
+  <Project Path="Wff.OpenSource/Wff.OpenSource.csproj" />
+</Solution>

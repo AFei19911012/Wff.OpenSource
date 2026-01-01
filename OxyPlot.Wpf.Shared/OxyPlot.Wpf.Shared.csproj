@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net10.0-windows</TargetFrameworks>
+    <UseWPF>true</UseWPF>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+
+	<PropertyGroup>
+		<BaseOutputPath>..\bin</BaseOutputPath>
+		 <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		 <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+		 <OutputPath>$(BaseOutputPath)</OutputPath>
+	</PropertyGroup>
+
+	<ItemGroup>
+    <ProjectReference Include="..\OxyPlot\OxyPlot.csproj" />
+  </ItemGroup>
+</Project>

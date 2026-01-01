@@ -1,0 +1,67 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net10.0-windows</TargetFramework>
+		<Nullable>disable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<UseWPF>true</UseWPF>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<BaseOutputPath>..\bin</BaseOutputPath>
+		 <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		 <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+		 <OutputPath>$(BaseOutputPath)</OutputPath>
+	</PropertyGroup>
+
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+		<Exec Command="call postbuild.bat" />
+	</Target>
+
+	<ItemGroup>
+		<ProjectReference Include="..\AvalonDock.Themes.VS2013\AvalonDock.Themes.VS2013.csproj" />
+		<ProjectReference Include="..\AvalonDock\AvalonDock.csproj" />
+		<ProjectReference Include="..\AvalonEdit\AvalonEdit.csproj" />
+		<ProjectReference Include="..\Bogus\Bogus.csproj" />
+		<ProjectReference Include="..\CsvHelper\CsvHelper.csproj" />
+		<ProjectReference Include="..\Dommel\Dommel.csproj" />
+		<ProjectReference Include="..\GongSolutions.WPF.DragDrop\GongSolutions.WPF.DragDrop.csproj" />
+		<ProjectReference Include="..\HelixToolkit\HelixToolkit.csproj" />
+		<ProjectReference Include="..\LibSvmDotNet\LibSvmDotNet.csproj" />
+		<ProjectReference Include="..\MiniExcelLibs\MiniExcelLibs.csproj" />
+		<ProjectReference Include="..\NLua\NLua.csproj" />
+		<ProjectReference Include="..\OxyPlot.Wpf.Shared\OxyPlot.Wpf.Shared.csproj" />
+		<ProjectReference Include="..\OxyPlot.Wpf\OxyPlot.Wpf.csproj" />
+		<ProjectReference Include="..\OxyPlot\OxyPlot.csproj" />
+		<ProjectReference Include="..\Serilog\Serilog.csproj" />
+		<ProjectReference Include="..\SkiaSharp.Views.WPF\SkiaSharp.Views.WPF.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+		<Reference Include="Dapper">
+			<HintPath>..\..\Dlls\Sqlite-Dapper-Dommel\Dapper.dll</HintPath>
+		</Reference>
+		<Reference Include="Microsoft.Data.Sqlite">
+			<HintPath>..\..\Dlls\Sqlite-Dapper-Dommel\Microsoft.Data.Sqlite.dll</HintPath>
+		</Reference>
+		<Reference Include="SkiaSharp">
+			<HintPath>..\..\Dlls\SkiaSharp\SkiaSharp.dll</HintPath>
+		</Reference>
+		<Reference Include="SQLitePCLRaw.batteries_v2">
+			<HintPath>..\..\Dlls\Sqlite-Dapper-Dommel\SQLitePCLRaw.batteries_v2.dll</HintPath>
+		</Reference>
+		<Reference Include="SQLitePCLRaw.core">
+			<HintPath>..\..\Dlls\Sqlite-Dapper-Dommel\SQLitePCLRaw.core.dll</HintPath>
+		</Reference>
+		<Reference Include="SQLitePCLRaw.provider.e_sqlite3">
+			<HintPath>..\..\Dlls\Sqlite-Dapper-Dommel\SQLitePCLRaw.provider.e_sqlite3.dll</HintPath>
+		</Reference>
+		<Reference Include="Wff.Controls">
+			<HintPath>..\..\Dlls\Wff.Controls.dll</HintPath>
+		</Reference>
+		<Reference Include="Wff.SDK">
+			<HintPath>..\..\Dlls\Wff.SDK.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+
+</Project>

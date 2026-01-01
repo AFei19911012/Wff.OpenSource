@@ -1,0 +1,51 @@
+﻿<wff:Window x:Class="Wff.OpenSource.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:demo="clr-namespace:Wff.OpenSource.Views"
+        xmlns:edit="http://icsharpcode.net/sharpdevelop/avalonedit"
+        xmlns:local="clr-namespace:Wff.OpenSource"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:wff="http://wff-toolkits/controls"
+        Title="MainWindow"
+        Width="1200"
+        Height="800"
+        mc:Ignorable="d">
+    <Grid>
+        <wff:TabControl TabStripPlacement="Left">
+            <wff:TabItem Header="AvalonEdit">
+                <demo:Demo_AvalonEdit />
+            </wff:TabItem>
+            <wff:TabItem Header="MiniExcelLibs">
+                <demo:Demo_MiniExcel />
+            </wff:TabItem>
+            <wff:TabItem Header="OxyPlot">
+                <demo:Demo_OxyPlot />
+            </wff:TabItem>
+            <wff:TabItem Header="HelixToolkit">
+                <demo:Demo_HelixToolkit />
+            </wff:TabItem>
+            <wff:TabItem Header="LibSvm">
+                <demo:Demo_LibSvm />
+            </wff:TabItem>
+            <wff:TabItem Header="SkiaSharp">
+                <demo:Demo_SkiaSharp />
+            </wff:TabItem>
+            <wff:TabItem Header="Dommel">
+                <demo:Demo_Dommel />
+            </wff:TabItem>
+            <wff:TabItem Header="SoftCircuits">
+                <demo:Demo_SoftCircuits />
+            </wff:TabItem>
+            <wff:TabItem Header="Bogus">
+                <demo:Demo_Bogus />
+            </wff:TabItem>
+            <wff:TabItem Header="NLua">
+                <demo:Demo_NLua />
+            </wff:TabItem>
+            <wff:TabItem Header="CsvHelper">
+                <demo:Demo_CsvHelper />
+            </wff:TabItem>
+        </wff:TabControl>
+    </Grid>
+</wff:Window>

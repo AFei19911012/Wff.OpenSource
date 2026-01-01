@@ -1,0 +1,16 @@
+copy ..\bin\AvalonDock.dll D:\MyPrograms\VS\Dlls\AvalonDock
+copy ..\bin\AvalonDock.Themes.VS2013.dll D:\MyPrograms\VS\Dlls\AvalonDock
+copy ..\bin\Serilog.dll D:\MyPrograms\VS\Dlls
+copy ..\bin\GongSolutions.WPF.DragDrop.dll D:\MyPrograms\VS\Dlls
+copy ..\bin\AvalonEdit.dll D:\MyPrograms\VS\Dlls
+copy ..\bin\MiniExcelLibs.dll D:\MyPrograms\VS\Dlls
+copy ..\bin\OxyPlot.dll D:\MyPrograms\VS\Dlls\OxyPlot
+copy ..\bin\OxyPlot.Wpf.dll D:\MyPrograms\VS\Dlls\OxyPlot
+copy ..\bin\OxyPlot.Wpf.Shared.dll D:\MyPrograms\VS\Dlls\OxyPlot
+copy ..\bin\HelixToolkit.dll D:\MyPrograms\VS\Dlls
+copy ..\bin\LibSvmDotNet.dll D:\MyPrograms\VS\Dlls\Svm
+copy ..\bin\SkiaSharp.Views.WPF.dll D:\MyPrograms\VS\Dlls\SkiaSharp
+copy ..\bin\Dommel.dll D:\MyPrograms\VS\Dlls\Sqlite-Dapper-Dommel
+copy ..\bin\Bogus.dll D:\MyPrograms\VS\Dlls
+copy ..\bin\NLua.dll D:\MyPrograms\VS\Dlls\Lua
+copy ..\bin\CsvHelper.dll D:\MyPrograms\VS\Dlls
