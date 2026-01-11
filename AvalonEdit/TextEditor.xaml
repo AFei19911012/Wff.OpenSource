@@ -31,16 +31,19 @@
         </Setter>
     </Style>
 
-    <Style x:Shared="False" TargetType="{x:Type editing:TextArea}">
+    <Style x:Shared="False"
+           TargetType="{x:Type editing:TextArea}">
         <Setter Property="FocusVisualStyle" Value="{x:Null}" />
         <Setter Property="SelectionBrush">
             <Setter.Value>
-                <SolidColorBrush Opacity="0.7" Color="{DynamicResource {x:Static SystemColors.HighlightColorKey}}" />
+                <SolidColorBrush Opacity="0.7"
+                                 Color="{DynamicResource {x:Static SystemColors.HighlightColorKey}}" />
             </Setter.Value>
         </Setter>
         <Setter Property="SelectionBorder">
             <Setter.Value>
-                <Pen Brush="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" Thickness="1" />
+                <Pen Brush="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"
+                     Thickness="1" />
             </Setter.Value>
         </Setter>
         <Setter Property="SelectionForeground" Value="{DynamicResource {x:Static SystemColors.HighlightTextBrushKey}}" />

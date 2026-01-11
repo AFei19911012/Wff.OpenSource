@@ -8,17 +8,24 @@
              d:DesignHeight="450"
              d:DesignWidth="800"
              mc:Ignorable="d">
-    <UniformGrid Columns="2" Rows="3">
-        <wff:Button Click="Button_Click" Content="ParsingHelper" />
+    <UniformGrid Columns="2"
+                 Rows="3">
+        <wff:Button Click="Button_Click"
+                    Content="ParsingHelper" />
 
-        <wff:Button Click="Button_Click_1" Content="OrderedDictionary" />
+        <wff:Button Click="Button_Click_1"
+                    Content="OrderedDictionary" />
 
-        <wff:Button Click="Button_Click_2" Content="ExpressionEvaluator" />
+        <wff:Button Click="Button_Click_2"
+                    Content="ExpressionEvaluator" />
 
-        <wff:Button Click="Button_Click_3" Content="FixedWidthParser" />
+        <wff:Button Click="Button_Click_3"
+                    Content="FixedWidthParser" />
 
-        <wff:Button Click="Button_Click_4" Content="EasyEncryption" />
+        <wff:Button Click="Button_Click_4"
+                    Content="EasyEncryption" />
 
-        <wff:Button Click="Button_Click_5" Content="WinSettings" />
+        <wff:Button Click="Button_Click_5"
+                    Content="WinSettings" />
     </UniformGrid>
 </UserControl>

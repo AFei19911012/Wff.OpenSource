@@ -1,0 +1,44 @@
+﻿<UserControl x:Class="Wff.OpenSource.Views.Demo_Serilog_RichTextBox"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:Wff.OpenSource.Views"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:wff="http://wff-toolkits/controls"
+             d:DesignHeight="450"
+             d:DesignWidth="800"
+             mc:Ignorable="d">
+    <DockPanel>
+        <WrapPanel DockPanel.Dock="Top"
+                   Orientation="Horizontal">
+
+            <wff:Button Click="Clear_OnClick"
+                        Content="Clear" />
+            <wff:Button Click="LogVerbose_OnClick"
+                        Content="Verbose" />
+            <wff:Button Click="LogDebug_OnClick"
+                        Content="Debug" />
+            <wff:Button Click="LogInformation_OnClick"
+                        Content="Information" />
+            <wff:Button Click="LogWarning_OnClick"
+                        Content="Warning" />
+            <wff:Button Click="LogError_OnClick"
+                        Content="Error" />
+            <wff:Button Click="LogFatal_OnClick"
+                        Content="Fatal" />
+            <wff:Button Click="LogParallelFor_OnClick"
+                        Content="Parallel.For(100*6)" />
+            <wff:Button Click="LogTaskRun_OnClick"
+                        Content="Task.Run(100*6)" />
+        </WrapPanel>
+
+        <RichTextBox x:Name="_richTextBox"
+                     Margin="0"
+                     Background="Black"
+                     FontFamily="Cascadia Mono, Consolas, Courier New, monospace"
+                     FontSize="14"
+                     HorizontalScrollBarVisibility="Auto"
+                     IsReadOnly="True"
+                     VerticalScrollBarVisibility="Auto" />
+    </DockPanel>
+</UserControl>

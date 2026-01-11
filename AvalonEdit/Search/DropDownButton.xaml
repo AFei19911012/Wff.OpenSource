@@ -2,8 +2,12 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:local="clr-namespace:AvalonEdit.Search">
     <!--  Colors for DropDownButton and SplitButton  -->
-    <SolidColorBrush x:Key="{ComponentResourceKey {x:Type local:DropDownButton}, ActiveBorder}" Color="#FF0A246A" />
-    <SolidColorBrush x:Key="{ComponentResourceKey {x:Type local:DropDownButton}, ActiveBackground}" Color="#FFB6BDD2" />
+    <SolidColorBrush x:Key="{ComponentResourceKey {x:Type local:DropDownButton},
+                                                  ActiveBorder}"
+                     Color="#FF0A246A" />
+    <SolidColorBrush x:Key="{ComponentResourceKey {x:Type local:DropDownButton},
+                                                  ActiveBackground}"
+                     Color="#FFB6BDD2" />
 
     <!--  Style and Template for DropDownButton  -->
     <Style TargetType="{x:Type local:DropDownButton}">
@@ -18,7 +22,8 @@
         <Setter Property="Control.VerticalContentAlignment" Value="Center" />
         <Setter Property="Template">
             <Setter.Value>
-                <ControlTemplate xmlns:s="clr-namespace:System;assembly=mscorlib" TargetType="local:DropDownButton">
+                <ControlTemplate xmlns:s="clr-namespace:System;assembly=mscorlib"
+                                 TargetType="local:DropDownButton">
                     <Border Name="OuterBorder"
                             Background="{TemplateBinding Panel.Background}"
                             BorderBrush="{TemplateBinding Border.BorderBrush}"

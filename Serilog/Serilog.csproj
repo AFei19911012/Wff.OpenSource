@@ -2,10 +2,10 @@
 
   <PropertyGroup>
     <TargetFramework>net10.0-windows</TargetFramework>
-    <Nullable>enable</Nullable>
+    <Nullable>disable</Nullable>
     <UseWPF>true</UseWPF>
     <ImplicitUsings>enable</ImplicitUsings>
-	  <NoWarn>$(NoWarn);CS1437;CS1570;CS3021</NoWarn>
+	  <NoWarn>$(NoWarn);CS1437;CS1570;CS3021;CS8625;CS8632</NoWarn>
   </PropertyGroup>
 
 	<PropertyGroup>

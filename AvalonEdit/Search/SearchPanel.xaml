@@ -29,7 +29,8 @@
                             </TextBox>
                             <search:DropDownButton Height="24">
                                 <search:DropDownButton.DropDownContent>
-                                    <Popup Name="PART_dropdownPopup" StaysOpen="False">
+                                    <Popup Name="PART_dropdownPopup"
+                                           StaysOpen="False">
                                         <Border Background="{DynamicResource {x:Static SystemColors.WindowBrushKey}}"
                                                 BorderBrush="{DynamicResource {x:Static SystemColors.WindowTextBrushKey}}"
                                                 BorderThickness="1">

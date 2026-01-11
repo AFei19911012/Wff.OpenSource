@@ -46,6 +46,9 @@
             <wff:TabItem Header="CsvHelper">
                 <demo:Demo_CsvHelper />
             </wff:TabItem>
+            <wff:TabItem Header="Serilog-RichTextBox">
+                <demo:Demo_Serilog_RichTextBox/>
+            </wff:TabItem>
         </wff:TabControl>
     </Grid>
 </wff:Window>

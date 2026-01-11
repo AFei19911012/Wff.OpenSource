@@ -22,7 +22,8 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type local:TrackerControl}">
-                    <Canvas HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                    <Canvas HorizontalAlignment="Stretch"
+                            VerticalAlignment="Stretch">
                         <Line x:Name="PART_HorizontalLine"
                               RenderOptions.EdgeMode="Aliased"
                               Stroke="{TemplateBinding LineStroke}"
@@ -58,9 +59,11 @@
         <Setter Property="DefaultTrackerTemplate">
             <Setter.Value>
                 <ControlTemplate>
-                    <local:TrackerControl LineExtents="{Binding PlotModel.PlotArea}" Position="{Binding Position}">
+                    <local:TrackerControl LineExtents="{Binding PlotModel.PlotArea}"
+                                          Position="{Binding Position}">
                         <local:TrackerControl.Content>
-                            <TextBlock Margin="7" Text="{Binding}" />
+                            <TextBlock Margin="7"
+                                       Text="{Binding}" />
                         </local:TrackerControl.Content>
                     </local:TrackerControl>
                 </ControlTemplate>
